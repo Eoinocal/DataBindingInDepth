@@ -1,0 +1,9 @@
+
+namespace DataBindingInDepth
+{
+    runtimeclass HostViewModel : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        HostViewModel();
+        String NextButtonText;
+    }
+}

@@ -17,18 +17,13 @@ namespace winrt::DataBindingInDepth::implementation
         InitializeComponent();
     }
 
-    int32_t MainWindow::MyProperty()
-    {
-        throw hresult_not_implemented();
-    }
-
-    void MainWindow::MyProperty(int32_t /* value */)
-    {
-        throw hresult_not_implemented();
-    }
-
     void MainWindow::myButton_Click(IInspectable const&, RoutedEventArgs const&)
     {
-        myButton().Content(box_value(L"Clicked"));
+        ViewModel().NextButtonText(L"Updated Next button text");
+    }
+
+    DataBindingInDepth::HostViewModel MainWindow::ViewModel()
+    {
+        return m_viewModel;
     }
 }

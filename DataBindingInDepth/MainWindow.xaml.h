@@ -4,6 +4,7 @@
 #undef GetCurrentTime
 
 #include "MainWindow.g.h"
+#include "HostViewModel.h"
 
 #pragma pop_macro("GetCurrentTime")
 
@@ -13,10 +14,12 @@ namespace winrt::DataBindingInDepth::implementation
     {
         MainWindow();
 
-        int32_t MyProperty();
-        void MyProperty(int32_t value);
+        DataBindingInDepth::HostViewModel ViewModel();
 
         void myButton_Click(Windows::Foundation::IInspectable const& sender, Microsoft::UI::Xaml::RoutedEventArgs const& args);
+
+    private:
+        DataBindingInDepth::HostViewModel m_viewModel;
     };
 }
 
