@@ -6,7 +6,7 @@ starting from a WinUI 3 Desktop project, the App will compile and appear to work
 
     ViewModel().NextButtonText(L"Updated Next button text");
 	
-at the point the App will throw a 
+at that point the App will throw a 
 
     WinRT originate error - 0x8001010E : 'The application called an interface that was marshalled for a different thread.'.
 	
