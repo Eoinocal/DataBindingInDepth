@@ -1,4 +1,4 @@
-# DataBindingInDepth with WinUI 3 on Desktop
+# Data Binding In Depth with C++/WinRT WinUI 3 on Desktop
 WinUI 3 Desktop project demonstranting DataBindingInDepth
 
 If you follow the [Data binding in depth](https://docs.microsoft.com/en-us/windows/uwp/data-binding/data-binding-in-depth) from Microsoft,
